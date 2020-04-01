@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body onload="updateInputs()">
+
+    <h1>User Prefs</h1>
+    <a href="index.html">Home-Page</a>
+
+    <form onsubmit="save(event)">
+
+
+        <label for="color">color:<input class="color-input" id="color" type="color" name="color" /></label>
+        <label for="date-of-birth">Date of birth:<input type="date" id="date-of-birth" name="date-of-birth" /></label>
+        <label for="email">Enter your email:
+            <input type="email" id="email" name="email"></label>
+        <label for="points">age :
+        <input type="range" id="points" name="points" min="18" max="120"></label>
+        <button>Go</button>
+
+    </form>
+
+
+
+
+    <script src="js/placeService.js"></script>
+    <script src="js/userPrefService.js"></script>
+    <script src="js/utilService.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
